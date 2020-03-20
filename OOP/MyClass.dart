@@ -1,6 +1,6 @@
 import 'Calculator.dart';
 
-class MyClass {
+class MyClass extends Calculator {
   // global variable / class variable/ instance variable
   String name = "Bozlur Rosid Sagor";
   int age = 24;
@@ -25,7 +25,10 @@ void main() {
   print(instance); // `instance` is a MyClass instnace/object
   print(
       "This is ${instance.name}, my age ${instance.age}"); // You may access of all elements the class
+  instance.add(50, 50);
+  instance.sub(50, 15);
 
+  // Calculator class instance
   var calculate = Calculator(); // You may use `new` keyword or not
   calculate.add(20, 80);
   calculate.sub(20, 80);
