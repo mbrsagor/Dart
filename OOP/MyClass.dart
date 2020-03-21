@@ -1,6 +1,7 @@
 import 'Calculator.dart';
+import 'AnotherClass.dart';
 
-class MyClass extends Calculator {
+class MyClass extends AnotherClass {
   // global variable / class variable/ instance variable
   String name = "Bozlur Rosid Sagor";
   int age = 24;
@@ -25,8 +26,7 @@ void main() {
   print(instance); // `instance` is a MyClass instnace/object
   print(
       "This is ${instance.name}, my age ${instance.age}"); // You may access of all elements the class
-  instance.add(50, 50);
-  instance.sub(50, 15);
+  instance.call_another_method();
 
   // Calculator class instance
   var calculate = Calculator(); // You may use `new` keyword or not
