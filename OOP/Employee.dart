@@ -27,6 +27,19 @@ class Employee extends Display {
         "@company.com";
     show(email);
   }
+  
+  void salary_increment(){
+      var current_salary = salary % 2;
+      var increment = salary ;
+  }
+  
+  void total_leave(){
+  
+  }
+  
+  void total_salary(){
+  
+  }
 
   void about_employee() {
     var about = "Hello, I'm "+first_name+" "+last_name+". "+"Working on "+tech+". My age is "+age.toString()+"year. My company prive me "+salary.toString()+" BDT only.\nMy email address: "+first_name.toLowerCase()+"."+last_name.toLowerCase()+"@company.com";
